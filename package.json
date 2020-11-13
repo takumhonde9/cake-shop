@@ -1,0 +1,40 @@
+{
+  "name": "cake-shop",
+  "version": "1.0.0",
+  "description": "A 1 page landing page for a cake site, using pug, express, sass",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takumhonde9/cake-shop.git"
+  },
+  "keywords": [
+    "cake-shop",
+    "landing-page",
+    "express",
+    "pug",
+    "sass",
+    "stripe"
+  ],
+  "author": "Takudzwa Mhonde",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takumhonde9/cake-shop/issues"
+  },
+  "homepage": "https://github.com/takumhonde9/cake-shop#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "pug": "^3.0.0",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6",
+    "sass": "^1.29.0"
+  }
+}
