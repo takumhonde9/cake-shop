@@ -1,2 +1,16 @@
+//- extend the main layout 
 extends ./layouts/main-layout.pug
+//- inclde components 
+include ./components/products.pug
+include ./components/pick-up.pug
+include ./components/about-us.pug
+include ./components/send-request.pug
+include ./components/delivery-and-payment.pug
 
+block content 
+  +products
+  +pick-up
+  +about-us
+  +send-request
+  +delivery-and-payment
+  
