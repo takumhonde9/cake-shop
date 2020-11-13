@@ -4,7 +4,8 @@
   "description": "A 1 page landing page for a cake site, using pug, express, sass",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -36,5 +37,6 @@
     "jest": "^26.6.3",
     "nodemon": "^2.0.6",
     "sass": "^1.29.0"
-  }
+  },
+  "type": "module"
 }
