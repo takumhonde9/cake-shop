@@ -11,11 +11,11 @@ html(lang="en")
           //-   a(href="/")
           //-     img(src="", alt="")
           li.main-header__item
-            a(href="/", class=(path==="/" ? "active" : "")) home 
-          li.main-header__item
             a(href="/", class=(path==="/catalog" ? "active" : "")) catalog 
           li.main-header__item
             a(href="/", class=(path==="/about" ? "active" : ""))  about
+          li.main-header__item
+            a(href="/", class=(path==="/contact" ? "active" : ""))  contact
     main
       block content
     footer
