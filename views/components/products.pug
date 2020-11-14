@@ -6,7 +6,7 @@ mixin products(products)
       .product
         img.product__img(src="", alt=product.title)
         p.product__title #{product.title}
-        p.product__price #{product.price}
+        p.product__price $#{product.price}
         +action-button("cart", "/images/cart.svg", "", "", product.id)
         +action-button("plus", "/images/plus.svg", "", "", product.id)
 
