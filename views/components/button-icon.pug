@@ -1,0 +1,4 @@
+mixin button-icon(link, target, ariaLabel, source)
+  a(href=link, target=target)
+    span.icon(role="img", aria-label=ariaLabel)
+      img.logo(src=source, alt=ariaLabel + " logo", height="24", width="24")
