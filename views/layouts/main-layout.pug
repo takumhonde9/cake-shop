@@ -8,15 +8,16 @@ html(lang="en")
     header.main-header
       nav.main-header__nav
         ul.main-header__item-list
-          //- li.main-header__item
-          //-   a(href="/")
-          //-     img(src="", alt="")
+          li.main-header__item
+            a(href="/")
+              img.logo(src="/images/logo1.png", alt="logo", width="130", height="55")
           li.main-header__item
             a(href="/", class=(path==="/catalog" ? "active" : "")) catalog 
           li.main-header__item
             a(href="/", class=(path==="/about" ? "active" : ""))  about
           li.main-header__item
             a(href="/", class=(path==="/contact" ? "active" : ""))  contact
+      block header-content
     main
       block content
     footer
