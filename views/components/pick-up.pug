@@ -1,3 +1,12 @@
+include ./button-rounded
+
 mixin pick-up
   .pick-up
-    h1 pick up box of cakes
+    .pick-up__container
+      h1 pick up your box of cakes
+      img(src="/images/holding-pastries-1.jpg", alt="person holding macarons", width="600", height="400")
+    .pick-up__container
+      img(src="/images/cupcake-box-1.jpg", alt="box of cupcakes", width="400", height="600")
+      p.subheading__primary Choose any of our delicacies made with love - we will pack them in a box and deliver them to you.
+      p.subheading__primary We can also add flowers and a card to the order
+      +button-rounded("pick up the box")
