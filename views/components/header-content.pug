@@ -1,15 +1,14 @@
+include ./button-underlined.pug
+include ./button-icon.pug
+
 mixin header-content
   .header-content
     .header-content__container
       .vertical-line
       .header__item
-        a(href="https://www.google.com/maps", target="_blank")
-          span.icon(role="img", aria-label="location")
-            img.logo(src="/images/location.svg", alt="location logo", height="24", width="24")
+        +button-icon("https://www.google.com/maps", "_blank", "location", "/images/location.svg")
       .header__item
-        a(href="tel:+1(555)555-5555")
-          span.icon(role="img", aria-label="phone")
-            img.logo(src="/images/phone.svg", alt="phone logo", height="24", width="24")
+        +button-icon("tel:+1(555)555-5555", "", "phone", "/images/phone.svg")
       .vertical-line
     .header-content__container
       .container
@@ -19,19 +18,13 @@ mixin header-content
         img(src="/images/cakes-1.jpg", alt="cakes", width="400", height="600")
         p.subheading__primary you don't need a special occasion to order cakes.
         p.subheading__primary we will bring them at any time.
-        a.button--underlined(href="/") go to selection
+        +button-underlined("/", "go to selection")
     .header-content__container
       .vertical-line
       .header-item
-        a(href="https://www.twitter.com", target="_blank")
-          span.icon(role="img", aria-label="twitter")
-            img.logo(src="/images/twitter.svg", alt="twitter logo", height="24", width="24")
+        +button-icon("https://www.twitter.com", "_blank", "twitter", "/images/twitter.svg")
       .header-item
-        a(href="https://www.facebook.com", target="_blank")
-          span.icon(role="img", aria-label="facebook")
-            img.logo(src="/images/facebook.svg", alt="facebook logo", height="24", width="24")
+        +button-icon("https://www.facebook.com", "_blank", "facebook", "/images/facebook.svg")
       .header-item
-        a(href="https://www.instagram.com", target="_blank")
-          span.icon(role="img", aria-label="instagram")
-            img.logo(src="/images/instagram.svg", alt="instagram logo", height="24", width="24")
+        +button-icon("https://www.instagram.com", "_blank", "instagram", "/images/instagram.svg")
       .vertical-line
