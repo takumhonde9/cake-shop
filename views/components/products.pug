@@ -1,4 +1,12 @@
 //- products(products)
-mixin products
+mixin products(products)
   .products
-    h1 products
+    for product in products
+      .product
+        img.product__img(src="", alt=product.title)
+        p.product__title #{product.title}
+        p.product__price #{product.price}
+        form(action="")
+          button.btn--circular.btn--add(type="submit") +
+          input(type="hidden", value=product.id, name="productId")
+
