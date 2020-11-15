@@ -2,11 +2,12 @@
 mixin cart-action-button(productId, type, source)
   
   if type === "plus"
-    form(action="/point/" + productId, method="POST")
+    form(action="")
       button.cart-action-button.plus-button(type="submit")
         +logo(type, source)
         input(type="hidden", name="productId", value=productId) 
   else 
-    button.cart-action-button.minus-button
-      +logo(type, source)
-      input.cart-item(type="hidden", name="productId", value=productId) 
+    form(action="")
+      button.cart-action-button.minus-button
+        +logo(type, source)
+        input.cart-item(type="hidden", name="productId", value=productId) 
