@@ -1,10 +1,16 @@
 include ../components/cart-button.pug
 include ../components/cart-dropdown.pug
+include ../components/footer.pug
+
 <!DOCTYPE html>
 html(lang="en")
   head
     title #{pageTitle}
     link(href="/images/favicon.png", type="image/png", rel="icon")
+    //- script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+    link(rel="stylesheet", href="/styles/styles.css")
+    script(src="/javascripts/jquery-3.5.1.min.js")
+    script(src='/javascripts/actions.js')
     block styles
   body
     header.main-header
@@ -26,4 +32,6 @@ html(lang="en")
     main
       block content
     footer
-      .footer
+      +footer
+    
+    
