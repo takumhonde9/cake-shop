@@ -1,8 +1,12 @@
 
 mixin cart-action-button(productId, type, source)
+  
   if type === "plus"
-  button.cart-action-button#add-button
-    +logo(type, source)
-  //- useful when I want to add/subtract to/from cart using jQuery
-  //- idea is to traverse the tree and look at the siblings product id
-  input(type="hidden", name="productId", value=productId) 
+    form(action="/point/" + productId, method="POST")
+      button.cart-action-button.plus-button(type="submit")
+        +logo(type, source)
+        input(type="hidden", name="productId", value=productId) 
+  else 
+    button.cart-action-button.minus-button
+      +logo(type, source)
+      input.cart-item(type="hidden", name="productId", value=productId) 

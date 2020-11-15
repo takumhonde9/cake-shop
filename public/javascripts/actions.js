@@ -14,6 +14,5 @@ $(document).ready(() => {
   });
 
   // PLUS BUTTON -> Click
-
   // MINUS BUTTON -> Click
 });
