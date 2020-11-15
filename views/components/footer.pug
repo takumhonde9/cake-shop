@@ -1,0 +1,22 @@
+include ./logo.pug
+
+mixin footer
+  .footer 
+    .footer__logo
+      +logo("logo", "/images/logo1.png")
+    .footer__subscribe
+      label(for="subscriptionEmail").subheading__primary--large subscribe and learn about promotions
+      .footer__subscribe
+        form(action="")
+          input(type="text", placeholder="email", name="subscriptionEmail" id="subscriptionEmail")
+          button(type="submit") subscribe
+      p.subheading__primary--tiny by clicking on the button you agree ti the processing of personal data
+    .footer__contact
+      p.subheading__primary--large 
+        strong
+          a(href="tel:+18009999999") 1 (800) 999-9999
+      p.subheading__primary--small 4545 Main Street, Vancouver, V2A5A1
+      .u-flex-container
+        +button-icon("https://www.twitter.com", "_blank", "twitter", "/images/twitter.svg")
+        +button-icon("https://www.facebook.com", "_blank", "facebook", "/images/facebook.svg")
+        +button-icon("https://www.instagram.com", "_blank", "instagram", "/images/instagram.svg")
