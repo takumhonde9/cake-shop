@@ -1,3 +1,5 @@
+include ../components/cart-button.pug
+include ../components/cart-dropdown.pug
 <!DOCTYPE html>
 html(lang="en")
   head
@@ -17,6 +19,9 @@ html(lang="en")
             a(href="/", class=(path==="/about" ? "active" : ""))  about
           li.main-header__item
             a(href="/", class=(path==="/contact" ? "active" : ""))  contact
+          li.main-header__item
+            +cart-button(cart.quantity)
+      +cart-dropdown(cart)
       block header-content
     main
       block content

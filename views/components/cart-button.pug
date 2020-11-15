@@ -1,0 +1,8 @@
+include ./logo.pug
+
+mixin cart-button(numOfItems)
+  .cart-button
+    .cart-button__icon
+      +logo("cart button", "/images/cart.svg")
+    .cart-button__counter 
+      p.cart-button__text #{numOfItems}

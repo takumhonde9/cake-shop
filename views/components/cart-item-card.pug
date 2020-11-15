@@ -1,0 +1,10 @@
+include ./cart-action-button.pug
+mixin cart-item-card(productId, title, image, price, quantity, desc)
+  .cart-item-card
+    img.cart-item-card__image(src=image, alt=desc, width="50", height="50")
+    p.cart-item-card__title #{title}
+    p.cart-item-card__desc #{desc}
+    p.cart-item-card__price #{price}
+    p.cart-item-card__quantity #{quantity}
+    +cart-action-button(productId, "plus", "/images/plus.svg")
+    +cart-action-button(productId, "minus", "/images/minus.svg")

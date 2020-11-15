@@ -1,0 +1,12 @@
+include ./cart-item-card.pug
+
+mixin cart-dropdown(cart)
+  //-- remove on css addition
+  .cart-dropdown(style="display: none;")
+    h2.heading__secondary--small
+      strong cart
+    for cartItem in cart.items
+      +cart-item-card(cartItem.Id, cartItem.title, cartItem.image, cartItem.price, cartItem.quantity, cartItem.desc)
+      form(action="")
+        button(type="submit") checkout
+        input(type="hidden", name="cart", value=cart)
