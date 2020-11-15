@@ -1,6 +1,7 @@
+include ./logo.pug 
 mixin action-button(ariaLabel, source, method, action, productId)
-  form(action=action)
-  button.button--circular.button--cart(type="submit") 
-    span.icon(role="img", aria-label=ariaLabel)
-      img.logo(src=source, alt=ariaLabel+" logo", height="24", width="24")
-  input(type="hidden", value=productId, name="productId")
+  .action-button
+    form(action=action)
+    button.button--circular(type="submit") 
+      +logo(ariaLabel, source)
+    input(type="hidden", value=productId, name="productId")

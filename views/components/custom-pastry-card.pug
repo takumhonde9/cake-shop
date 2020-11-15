@@ -1,0 +1,11 @@
+include ./action-button.pug
+
+mixin custom-pastry-card(source, path, text, alt, customPastryId)
+  .custom-pastry-card
+    .custom-pastry-card__image
+      img(src=source, alt=alt, width="400", height="400")
+    .custom-pastry-card__text 
+      p.subheading__primary #{text}
+    .custom-pastry-card__button
+      +action-button("plus", "/images/plus.svg", "", "", customPastryId)
+    

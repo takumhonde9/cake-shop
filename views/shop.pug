@@ -8,12 +8,14 @@ include ./components/send-request.pug
 include ./components/delivery-and-payment.pug
 include ./components/header-content.pug
 include ./components/button-underlined.pug
+include ./components/heading-text.pug
 
 block header-content
   +header-content
 
 block content
   .container--centered
+    +heading-text("choose your cake", "we use both original recipes and classic versions of famous cakes and pastries")
     +products(products)
     +button-underlined("/", "load more cakes")
   +pick-up
