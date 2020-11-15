@@ -2,7 +2,7 @@ include ./cart-item-card.pug
 
 mixin cart-dropdown(cart)
   //-- remove on css addition
-  .cart-dropdown(style="display: none;")
+  .cart-dropdown.hidden
     h2.heading__secondary--small
       strong cart
     for cartItem in cart.items
