@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: Gilroy;
 }
 
 body {
@@ -16,8 +17,14 @@ body {
   margin: 0;
 }
 
-h1 {
-  color: red;
+@font-face {
+  font-family: Gilroy;
+  font-weight: bold;
+  src: url("../../../fonts/Gilroy-ExtraBold.otf");
+}
+@font-face {
+  font-family: Gilroy;
+  src: url("../../../fonts/Gilroy-Light.otf");
 }
 
 /*# sourceMappingURL=styles.css.map */

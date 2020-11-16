@@ -1,3 +1,10 @@
-h1 {
-  color: red;
+@font-face {
+  font-family: Gilroy;
+  font-weight: bold;
+  src: url("../../../fonts/Gilroy-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../../../fonts/Gilroy-Light.otf");
 }
