@@ -26,5 +26,26 @@ body {
   font-family: Gilroy;
   src: url("../../../fonts/Gilroy-Light.otf");
 }
+.heading-primary {
+  font-size: 4.5rem;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+}
+
+.subheading-primary {
+  font-size: 2rem;
+}
+.subheading-primary--large {
+  font-size: 2.5rem;
+}
+.subheading-primary--small {
+  font-size: 1.5rem;
+}
+
+.cart-dropdown {
+  display: none;
+}
 
 /*# sourceMappingURL=styles.css.map */
