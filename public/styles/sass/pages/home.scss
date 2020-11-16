@@ -8,7 +8,8 @@
   }
 }
 
-section.products {
+section.products,
+section.pick-up {
   margin-top: $margin-normal;
 }
 
@@ -19,5 +20,15 @@ section.products {
   }
   &__price {
     font-weight: bold;
+  }
+}
+
+section.pick-up {
+  background-color: $color-secondary;
+}
+
+.pick-up {
+  &__subheading {
+    max-width: 55rem;
   }
 }

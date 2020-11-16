@@ -4,9 +4,11 @@ mixin pick-up
   .pick-up
     .pick-up__container
       h2.heading-secondary pick up your box of cakes
-      img.image--landscape(src="/images/holding-pastries-1.jpg", alt="person holding macarons", width="600", height="400")
+      img.image--portrait(src="/images/cupcake-box-1.jpg", alt="person holding macarons")
     .pick-up__container
-      img.image--portrait(src="/images/cupcake-box-1.jpg", alt="box of cupcakes", width="400", height="600")
-      p.subheading-primary Choose any of our delicacies made with love - we will pack them in a box and deliver them to you.
-      p.subheading-primary We can also add flowers and a card to the order
-      +button-rounded("pick up the box")
+      img.image--landscape(src="/images/holding-pastries-1.jpg", alt="box of cupcakes")
+      .pick-up__information
+        p.subheading-primary.pick-up__subheading Choose any of our delicacies made with love - we will pack them in a box and deliver them to you.
+        p.subheading-primary.pick-up__subheading We can also add flowers and a card to the order
+      .pick-up__actions
+        +button-rounded("pick up the box")

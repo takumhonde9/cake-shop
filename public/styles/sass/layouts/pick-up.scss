@@ -1,0 +1,16 @@
+div.pick-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: $margin-small;
+  padding-bottom: $margin-small;
+  &__container:first-child {
+    margin-right: 5rem;
+  }
+  &__information {
+    margin-top: $margin-small;
+  }
+  &__actions {
+    margin-top: $margin-small;
+  }
+}
