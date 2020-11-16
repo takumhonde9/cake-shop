@@ -1,18 +1,12 @@
-let state = {
-  cartDropdownActive: false,
-};
-
 $(document).ready(() => {
   const cartButton = $(".cart-button button");
   const cartDropdown = $(".cart-dropdown");
 
-  // CART BUTTON -> Click
+  /* --- Click Handlers --- */
+  // CART BUTTON
   cartButton.on("click", () => {
-    state.cartDropdownActive ? cartDropdown.hide() : cartDropdown.show();
-    // toggle state
-    state = { ...state, cartDropdownActive: !state.cartDropdownActive };
+    cartDropdown.toggle();
   });
-
-  // PLUS BUTTON -> Click
-  // MINUS BUTTON -> Click
+  // PLUS BUTTON
+  // MINUS BUTTON
 });
