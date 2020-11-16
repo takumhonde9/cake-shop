@@ -4,7 +4,7 @@ mixin products(products)
   .products
     for product in products
       .product
-        img.product__img(src="", alt=product.title)
+        img.product__img.image-square(src="", alt=product.title)
         p.product__title #{product.title}
         p.product__price $#{product.price}
         +action-button("cart", "/images/cart.svg", "", "", product.id)
