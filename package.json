@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "jest",
-    "dev": "nodemon app.js"
+    "watch:dev": "npm run dev & npm run compile:sass",
+    "dev": "nodemon app.js",
+    "compile:sass": "sass --watch ./public/styles/sass/index.scss ./public/styles/css/styles.css"
   },
   "repository": {
     "type": "git",
