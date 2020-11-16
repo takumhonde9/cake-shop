@@ -24,12 +24,18 @@
     grid-template-columns: 1fr 3fr 1fr;
   }
   &__item a,
-  a:link,
-  a:visited {
+  &__item a:link,
+  &__item a:visited {
     font-size: 2.5rem;
     padding: 0.5rem;
     text-decoration: none;
     color: $color-primary;
     margin-right: 6rem;
+  }
+  &__item {
+    transition: 0.5s;
+  }
+  &__item:hover:not(.no-hover) {
+    transform: scale(1.25);
   }
 }

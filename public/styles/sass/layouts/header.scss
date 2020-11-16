@@ -1,0 +1,24 @@
+.header-content {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  &__container {
+    &--row {
+      display: flex;
+      flex-direction: row;
+      // could do better, maybe?
+      justify-content: space-around;
+    }
+    &--col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &__heading {
+    padding: 5rem;
+    max-width: 55rem;
+  }
+  &__item {
+    text-align: center;
+  }
+}

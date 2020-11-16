@@ -1,6 +1,7 @@
 // ABSTRACT IMPORTS
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
+
 // BASE IMPORTS
 @import "./base/base";
 @import "./base/animations";
@@ -10,6 +11,9 @@
 // COMPONENTS IMPORTS
 @import "./components/cart-dropdown";
 @import "./components/header";
+
+// LAYOUT IMPORTS
+@import "./layouts/header";
 
 // PAGE IMPORTS
 @import "./pages/home";
