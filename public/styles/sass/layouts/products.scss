@@ -1,0 +1,21 @@
+div.products {
+  display: grid;
+  margin-top: $margin-small;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.product {
+  &__container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__actions {
+    display: flex;
+    .action-button:first-child {
+      margin-right: 1rem;
+    }
+  }
+}

@@ -9,24 +9,30 @@
   src: url("../../../fonts/Gilroy-Light.otf");
 }
 
-.heading-primary {
-  font-size: 4.5rem;
-}
-.heading-secondary {
-  font-size: 3.5rem;
-}
-.subheading-primary {
-  font-size: 2rem;
-  &--large {
-    font-size: 2.5rem;
-  }
-  &--small {
-    font-size: 1.5rem;
-  }
-}
-
 p,
 h1,
 h2 {
   color: $color-primary;
+}
+
+.heading-primary {
+  font-size: $primary-heading-font-size;
+}
+.heading-secondary {
+  font-size: $secondary-heading-font-size;
+}
+.subheading-primary {
+  font-size: $subheading-normal-font-size;
+  &--large {
+    font-size: $subheading-large-font-size;
+  }
+  &--small {
+    font-size: $subheading-small-font-size;
+  }
+}
+
+.heading-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }

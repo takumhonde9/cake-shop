@@ -4,11 +4,14 @@ mixin products(products)
   .products
     for product in products
       .product
-        img.product__img.image-square(src="", alt=product.title)
-        p.product__title #{product.title}
-        p.product__price $#{product.price}
-        +action-button("cart", "/images/cart.svg", "", "", product.id)
-        +action-button("plus", "/images/plus.svg", "", "", product.id)
+        img.product__img.image--square(src="/images/cupcake.jpg", alt=product.title)
+        .product__container
+          .product__information
+            p.product__title #{product.title}
+            p.product__price $#{product.price}
+          .product__actions
+            +action-button("cart", "/images/cart.svg", "", "", product.id)
+            +action-button("plus", "/images/plus.svg", "", "", product.id)
 
         
 

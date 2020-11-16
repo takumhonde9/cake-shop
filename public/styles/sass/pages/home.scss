@@ -7,3 +7,17 @@
     text-align: center;
   }
 }
+
+section.products {
+  margin-top: $margin-normal;
+}
+
+.product {
+  &__title,
+  &__price {
+    font-size: $subheading-small-font-size;
+  }
+  &__price {
+    font-weight: bold;
+  }
+}
