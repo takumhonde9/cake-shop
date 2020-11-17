@@ -20,9 +20,19 @@
     align-items: center;
   }
 }
-
+.u-flex-horizontal {
+  &--centered {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 .u-grid-container-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 2rem;
+}
+.u-grid-container-2 {
+  display: grid;
+  grid-template-columns: 76% 24%;
 }

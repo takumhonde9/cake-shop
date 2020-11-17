@@ -1,5 +1,10 @@
 .custom-pastry-card {
   &__text {
-    max-width: 25rem;
+    max-width: 20rem;
+    text-align: left;
+  }
+  &__button {
+    display: flex;
+    justify-content: flex-end;
   }
 }

@@ -28,8 +28,9 @@ mixin about-us
         .about-us__shipping-flow-item 
           p.subheading-primary unique cake
     .about-us__delivery-information
-      +heading-text("flowers and greeting cards for loved ones", "Everybody loves sweet gifts. Therefore box with cakes and flowers with be an exquisite surprise that no one can resist.")
-      .u-grid-container-4
+      .u-margin-bottom-small
+        +heading-text("flowers and greeting cards for loved ones", "Everybody loves sweet gifts. Therefore box with cakes and flowers with be an exquisite surprise that no one can resist.")
+      .u-grid-container-4.u-flex-container-horizontal
         +custom-pastry-card("/images/assortment-box.jpg", "", "box of assorted cakes and a bouquet of flowers.", "cake assortment box")
         +custom-pastry-card("/images/decorated-cupcakes.jpg", "", "decorated cupcakes with postcard.", "decorated cupcakes")
         +custom-pastry-card("/images/themed-cookies.jpg","", "themed cookies with a bouquet of flowers.", "themed cookies")
