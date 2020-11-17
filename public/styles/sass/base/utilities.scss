@@ -10,7 +10,9 @@
   margin-top: $margin-small;
   margin-bottom: $margin-small;
 }
-
+.u-margin-bottom-small {
+  margin-bottom: $margin-small;
+}
 .u-flex-vertical {
   &--centered {
     display: flex;
