@@ -1,0 +1,26 @@
+.button {
+  &--rounded {
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem;
+    color: $color-white;
+    text-decoration: none;
+    border-radius: 100px;
+  }
+  &--underlined {
+    text-transform: uppercase;
+    font-size: $subheading-normal-font-size;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    color: $color-primary;
+    letter-spacing: 3px;
+  }
+  &--circular {
+    padding: 0.5rem;
+    border-radius: 100px;
+    border: 2px solid;
+    background-color: $color-white;
+  }
+  &--primary {
+    background-color: $color-primary;
+  }
+}
