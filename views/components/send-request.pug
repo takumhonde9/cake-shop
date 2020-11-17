@@ -6,5 +6,7 @@ mixin send-request
       img.image--potrait(src="/images/macarons-1.jpg", alt="macarons", height="600", width="400")
     .send-request__container
       img.image--landscape(src="/images/bakery-1.jpg", alt="bakery", height="400", width="600")
-      p.subheading-primary.send-request__text Write to us and we will gladly realize and of you ideals (minimum 5 cakes).
-      +button-rounded("send request")
+      .send-request__information
+        p.subheading-primary.send-request__text Write to us and we will gladly realize and of you ideals (minimum 5 cakes).
+      .send-request__actions
+        +button-rounded("send request")

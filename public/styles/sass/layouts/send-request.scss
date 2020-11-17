@@ -1,0 +1,29 @@
+div.send-request {
+  display: grid;
+  margin-left: 18rem;
+  margin-right: 18rem;
+  grid-template-columns: 1fr 1fr;
+  padding-top: $margin-small;
+  padding-bottom: $margin-small;
+  &__container:first-child {
+    margin-right: 5rem;
+  }
+  &__container:first-child > h2 {
+    margin-bottom: 5rem;
+    max-width: 30rem;
+  }
+  &__information {
+    margin-top: 2.5rem;
+    padding: 5rem;
+  }
+  &__actions {
+    margin-top: 2.5rem;
+    margin-left: 5rem;
+  }
+}
+
+p.send-request {
+  &__text {
+    max-width: 30rem;
+  }
+}
