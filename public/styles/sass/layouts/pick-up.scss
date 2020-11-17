@@ -14,3 +14,10 @@ div.pick-up {
     margin-top: $margin-small;
   }
 }
+
+h2.pick-up {
+  &__heading {
+    margin-bottom: $margin-small;
+    max-width: 30rem;
+  }
+}

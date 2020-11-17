@@ -10,20 +10,26 @@ mixin about-us
     .about-us__shipping-information
       p.subheading-primary
         strong When you order our products, you can be sure of the quality and freshness of our desserts.
-      .about-us__shipping-flow 
-        .u-flex-container
+      .about-us__shipping-flow
+        .about-us__shipping-flow-item 
           +logo("shipping","/images/shipped.svg")
-          .horizontal-line
+        .horizontal-line
+        .about-us__shipping-flow-item 
           +logo("payment", "/images/payment-hand.svg")
-          .horizontal-line
+        .horizontal-line
+        .about-us__shipping-flow-item 
           +logo("cake", "/images/cake.svg")
-        .u-flex-container
+        .about-us__shipping-flow-item 
           p.subheading-primary fast shipping
+        .container
+        .about-us__shipping-flow-item 
           p.subheading-primary convenient shipping
+        .container
+        .about-us__shipping-flow-item 
           p.subheading-primary unique cake
     .about-us__delivery-information
       +heading-text("flowers and greeting cards for loved ones", "Everybody loves sweet gifts. Therefore box with cakes and flowers with be an exquisite surprise that no one can resist.")
-      .u-flex-container
+      .u-grid-container-4
         +custom-pastry-card("/images/assortment-box.jpg", "", "box of assorted cakes and a bouquet of flowers.", "cake assortment box")
         +custom-pastry-card("/images/decorated-cupcakes.jpg", "", "decorated cupcakes with postcard.", "decorated cupcakes")
         +custom-pastry-card("/images/themed-cookies.jpg","", "themed cookies with a bouquet of flowers.", "themed cookies")

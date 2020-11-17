@@ -1,0 +1,29 @@
+div.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $margin-small;
+  margin-bottom: $margin-small;
+  & > h2 {
+    margin-bottom: $margin-small;
+  }
+  &__information > p {
+    margin-bottom: $margin-tiny;
+  }
+  &__shipping-information p:first-child {
+    margin-bottom: $margin-tiniest;
+  }
+  &__shipping-flow {
+    display: grid;
+    grid-template-columns: 1fr 0.35fr 1fr 0.35fr 1fr;
+    grid-row-gap: $margin-tiniest;
+  }
+  &__shipping-flow-item {
+    display: flex;
+    justify-content: center;
+    row-gap: $margin-small;
+  }
+  &__delivery-information {
+    margin-top: $margin-small;
+  }
+}
