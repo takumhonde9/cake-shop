@@ -5,18 +5,18 @@ mixin footer
     .footer__logo
       +logo("logo", "/images/logo1.png")
     .footer__subscribe
-      label(for="subscriptionEmail").subheading-primary--large subscribe and learn about promotions
-      .footer__subscribe
-        form(action="")
-          input(type="text", placeholder="email", name="subscriptionEmail" id="subscriptionEmail")
+      .u-flex-vertical--centered
+        label(for="subscriptionEmail").subheading-primary subscribe and learn about promotions
+        form.email-form(action="")
+          input(type="email", placeholder="email", name="subscriptionEmail" id="subscriptionEmail")
           button(type="submit") subscribe
-      p.subheading-primary--tiny by clicking on the button you agree ti the processing of personal data
+        p.subheading-primary--tiny by clicking on the button you agree ti the processing of personal data
     .footer__contact
       p.subheading-primary--large 
         strong
           a(href="tel:+18009999999") 1 (800) 999-9999
       p.subheading-primary--small 4545 Main Street, Vancouver, V2A5A1
-      .u-flex-container
+      .u-flex-horizontal--centered
         +button-icon("https://www.twitter.com", "_blank", "twitter", "/images/twitter.svg")
         +button-icon("https://www.facebook.com", "_blank", "facebook", "/images/facebook.svg")
         +button-icon("https://www.instagram.com", "_blank", "instagram", "/images/instagram.svg")

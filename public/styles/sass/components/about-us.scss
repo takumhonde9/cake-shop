@@ -1,0 +1,8 @@
+div.about-us {
+  margin-bottom: $margin-tiny;
+  &__flow-logo {
+    padding: 1rem;
+    border-radius: 100px;
+    border: 1px solid;
+  }
+}

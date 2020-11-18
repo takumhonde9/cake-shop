@@ -1,0 +1,22 @@
+.delivery-and-payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $margin-small;
+  & h2 {
+    margin-bottom: $margin-small;
+  }
+  & p {
+    max-width: 55rem;
+    text-align: center;
+  }
+  & p:nth-child(2) {
+    margin-bottom: $margin-small-2;
+  }
+  & p:nth-child(3) {
+    margin-bottom: $margin-small;
+  }
+  & p:nth-child(4) {
+    margin-bottom: $margin-tiny;
+  }
+}

@@ -1,0 +1,33 @@
+div.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: $margin-small $margin-large;
+
+  & > &__logo * img {
+    width: 16rem;
+    height: 7rem;
+  }
+
+  & > &__contact * img {
+    margin-right: $margin-tiniest;
+  }
+
+  &__contact p {
+    text-align: center;
+    margin-bottom: $margin-tiniest;
+  }
+
+  &__contact a,
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: $color-primary;
+  }
+
+  &__subscribe form {
+    margin: $margin-tiniest 0;
+    margin-left: 12rem;
+  }
+}

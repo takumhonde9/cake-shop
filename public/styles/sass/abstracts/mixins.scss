@@ -1,0 +1,11 @@
+@mixin border-left-right {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+@mixin component-border {
+  margin-left: 8rem;
+  margin-right: 8rem;
+  padding: $margin-small 10rem;
+  @include border-left-right;
+}

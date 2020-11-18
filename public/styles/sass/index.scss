@@ -15,6 +15,11 @@
 @import "./components/button";
 @import "./components/logo";
 @import "./components/custom-pastry-card";
+@import "./components/line";
+@import "./components/about-us";
+@import "./components/delivery-and-payment";
+@import "./components/forms";
+@import "./components/heading-text";
 
 // LAYOUT IMPORTS
 @import "./layouts/header";
@@ -22,6 +27,8 @@
 @import "./layouts/pick-up";
 @import "./layouts/about-us";
 @import "./layouts/send-request";
+@import "./layouts/delivery-and-payment";
+@import "./layouts/footer";
 
 // PAGE IMPORTS
 @import "./pages/home";

@@ -28,13 +28,14 @@ html(lang="en")
             li.main-header__item
               a(href="/", class=(path==="/contact" ? "active" : ""))  contact
           .main-header__nav--right
-            li.main-header__item.no-hover
+            li.main-header__item.main-header__cart-button.no-hover
               +cart-button(cart.quantity)
       +cart-dropdown(cart)
       block header-content
     main
       block content
     footer
-      +footer
+      section.footer
+        +footer
     
     

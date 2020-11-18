@@ -3,29 +3,25 @@ include ./button-icon.pug
 
 mixin header-content
   .header-content
-    .header-content__container--col
-      .vertical-line
-      .header__item
+    .header-content__contact
+      .header-content__item.header-content__item--left
         +button-icon("https://www.google.com/maps", "_blank", "location", "/images/location.svg")
-      .header__item
+      .header-content__item.header-content__item--left
         +button-icon("tel:+1(555)555-5555", "", "phone", "/images/phone.svg")
-      .vertical-line
-    .header-content__container--row
-      .header-content__container--left
+    .header-content__container
         h1.heading-primary.header-content__heading own production of cakes
-        img.image--landscape(src="/images/cake-and-tea-1.jpg", alt="cake and tea", width="600", height="400")
-      .container--right
         img.image--portrait(src="/images/cakes-1.jpg", alt="cakes", width="400", height="600")
-        .u-margin-vertical-small
-          p.subheading-primary.header-content__subheading you don't need a special occasion to order cakes.
-          p.subheading-primary.header-content__subheading we will bring them at any time.
-        +button-underlined("/", "go to selection")
-    .header-content__container--col
-      .vertical-line
-      .header-content__item
+        img.image--landscape(src="/images/cake-and-tea-1.jpg", alt="cake and tea", width="600", height="400")
+        .header-content__information
+          .header-content__text
+            p.subheading-primary.header-content__subheading you don't need a special occasion to order cakes.
+            p.subheading-primary.header-content__subheading we will bring them at any time.
+          .header-content__actions
+            +button-underlined("/", "go to selection")
+    .header-content__contact
+      .header-content__item.header-content__item--right
         +button-icon("https://www.twitter.com", "_blank", "twitter", "/images/twitter.svg")
-      .header-content__item
+      .header-content__item.header-content__item--right
         +button-icon("https://www.facebook.com", "_blank", "facebook", "/images/facebook.svg")
-      .header-content__item
+      .header-content__item.header-content__item--right
         +button-icon("https://www.instagram.com", "_blank", "instagram", "/images/instagram.svg")
-      .vertical-line

@@ -11,14 +11,17 @@ mixin about-us
       p.subheading-primary
         strong When you order our products, you can be sure of the quality and freshness of our desserts.
       .about-us__shipping-flow
-        .about-us__shipping-flow-item 
-          +logo("shipping","/images/shipped.svg")
-        .horizontal-line
-        .about-us__shipping-flow-item 
-          +logo("payment", "/images/payment-hand.svg")
-        .horizontal-line
-        .about-us__shipping-flow-item 
-          +logo("cake", "/images/cake.svg")
+        .about-us__shipping-flow-item
+          .about-us__flow-logo  
+            +logo("shipping","/images/shipped.svg")
+        .line--horizontal
+        .about-us__shipping-flow-item
+          .about-us__flow-logo 
+            +logo("payment", "/images/payment-hand.svg")
+        .line--horizontal
+        .about-us__shipping-flow-item
+          .about-us__flow-logo  
+            +logo("cake", "/images/cake.svg")
         .about-us__shipping-flow-item 
           p.subheading-primary fast shipping
         .container

@@ -4,11 +4,13 @@ div.about-us {
   align-items: center;
   margin-top: $margin-small;
   margin-bottom: $margin-small;
-  & > h2 {
+  & h2 {
     margin-bottom: $margin-small;
   }
-  &__information > p {
+  &__information p {
     margin-bottom: $margin-tiny;
+    max-width: 55rem;
+    text-align: center;
   }
   &__shipping-information p:first-child {
     margin-bottom: $margin-tiniest;

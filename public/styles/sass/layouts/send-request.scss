@@ -1,14 +1,11 @@
 div.send-request {
   display: grid;
-  margin-left: 18rem;
-  margin-right: 18rem;
   grid-template-columns: 1fr 1fr;
-  padding-top: $margin-small;
-  padding-bottom: $margin-small;
+  @include component-border;
   &__container:first-child {
     margin-right: 5rem;
   }
-  &__container:first-child > h2 {
+  &__container:first-child h2 {
     margin-bottom: 5rem;
     max-width: 30rem;
   }

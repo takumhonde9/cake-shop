@@ -1,0 +1,28 @@
+.email-form {
+  input[type="email"] {
+    width: 30rem;
+  }
+  button {
+    position: relative;
+    left: -12rem;
+  }
+  input[type="email"] {
+    padding: 1rem 12rem 1.2rem 1rem;
+    font-size: $subheading-normal-font-size;
+    letter-spacing: 1px;
+  }
+  input[type="email"],
+  button {
+    border-radius: 100px;
+    border: 1px solid;
+  }
+  button {
+    padding: 1rem 3rem;
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
+
+input {
+  outline: none;
+}
