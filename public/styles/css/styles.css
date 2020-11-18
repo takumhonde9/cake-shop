@@ -13,7 +13,6 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 1rem;
   margin: 0;
 }
 
@@ -288,13 +287,13 @@ input {
   text-align: center;
   position: relative;
   background-color: #f4efe6;
-  padding: 1rem;
+  padding: 1.3rem;
 }
 .header-content__item--left {
-  left: 10px;
+  left: -1px;
 }
 .header-content__item--right {
-  right: 6px;
+  right: -1px;
 }
 .header-content__container img:nth-child(3) {
   position: relative;
