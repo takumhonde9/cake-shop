@@ -20,6 +20,8 @@ app.use(express.static(path.join(__dirname, "public")));
 // routes
 app.use("/", shop);
 
-app.listen(config.port, () => {
-  console.log(`server listening on port: ${config.port}`);
+const port = process.env.PORT || config.port;
+
+app.listen(port, () => {
+  console.log(`server listening on port: ${port}`);
 });
