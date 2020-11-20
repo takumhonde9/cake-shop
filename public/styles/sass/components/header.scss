@@ -1,6 +1,7 @@
 .main-header {
   background-color: $color-secondary;
-  height: 85rem;
+  max-width: 85rem;
+  min-width: 100vw;
   &__nav {
     padding: 1rem;
     z-index: 100;

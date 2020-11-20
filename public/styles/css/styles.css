@@ -105,7 +105,8 @@ h2 {
 
 .main-header {
   background-color: #f4efe6;
-  height: 85rem;
+  max-width: 85rem;
+  min-width: 100vw;
 }
 .main-header__nav {
   padding: 1rem;
