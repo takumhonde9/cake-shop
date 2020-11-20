@@ -4,7 +4,7 @@
   "description": "A 1 page landing page for a cake site, using pug, express, sass",
   "main": "app.js",
   "scripts": {
-    "deploy" : "git push heroku main",
+    "deploy" : "heroku login & git push heroku main",
     "start": "node app.js",
     "test": "jest",
     "watch:dev": "npm run dev & npm run compile:sass",

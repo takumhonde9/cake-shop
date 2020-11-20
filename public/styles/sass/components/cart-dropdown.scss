@@ -1,3 +1,27 @@
 .cart-dropdown {
   display: none;
 }
+
+.cart-button {
+  margin-top: 10px;
+  & button {
+    cursor: pointer;
+  }
+  &__text {
+    color: #fff;
+    font-size: 1.5rem;
+    // font-weight: bold;
+  }
+  &__counter {
+    background-color: #252e38;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100px;
+    position: relative;
+    top: -4rem;
+    left: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

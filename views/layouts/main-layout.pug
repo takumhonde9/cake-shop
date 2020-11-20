@@ -21,11 +21,11 @@ html(lang="en")
               a(href="/")
                 img.brand-logo(src="/images/logo1.png", alt="logo", width="130", height="55")
           .main-header__nav--center
-            li.main-header__item
+            li.main-header__item(class=(path==="/catalog" ? "no-hover" : ""))
               a(href="/catalog", class=(path==="/catalog" ? "u-active" : "")) catalog 
-            li.main-header__item
+            li.main-header__item(class=(path==="/about" ? "no-hover" : ""))
               a(href="/about", class=(path==="/about" ? "u-active" : ""))  about
-            li.main-header__item
+            li.main-header__item(class=(path==="/catalog" ? "no-hover" : ""))
               a(href="/contact", class=(path==="/contact" ? "u-active" : ""))  contact
           .main-header__nav--right
             li.main-header__item.main-header__cart-button.no-hover

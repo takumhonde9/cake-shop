@@ -1,5 +1,13 @@
 //- extend the main layout 
 extends ./layouts/main-layout.pug
+//- inclde components 
+include ./components/products.pug
+include ./components/heading-text.pug
 
 block content
-  h1 Products
+  .u-margin-vertical-small
+    .u-flex-vertical--centered
+      +heading-text("choose your cake", "we use both original recipes and classic versions of famous cakes and pastries")
+      .u-margin-bottom-small
+        +products(products)
+  

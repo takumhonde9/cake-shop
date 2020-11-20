@@ -38,3 +38,7 @@
   display: grid;
   grid-template-columns: 76% 24%;
 }
+
+.u-active {
+  border-bottom: 3px solid $color-primary;
+}

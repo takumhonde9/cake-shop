@@ -99,8 +99,35 @@ h2 {
   grid-template-columns: 76% 24%;
 }
 
+.u-active {
+  border-bottom: 3px solid #252d38;
+}
+
 .cart-dropdown {
   display: none;
+}
+
+.cart-button {
+  margin-top: 10px;
+}
+.cart-button button {
+  cursor: pointer;
+}
+.cart-button__text {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.cart-button__counter {
+  background-color: #252e38;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100px;
+  position: relative;
+  top: -4rem;
+  left: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-header {
@@ -188,13 +215,16 @@ h2 {
 .button--primary {
   background-color: #252d38;
 }
+.button--circular {
+  cursor: pointer;
+}
 
 button {
   outline: none;
 }
 
 .logo--small {
-  width: 2.3rem;
+  width: 2.6rem;
 }
 
 .custom-pastry-card__text {
