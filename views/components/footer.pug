@@ -8,7 +8,7 @@ mixin footer
     .footer__subscribe
       .u-flex-vertical--centered
         label(for="subscriptionEmail").subheading-primary subscribe and learn about promotions
-        form.email-form(action="")
+        form.email-form(action="/contact/subscribe", method="POST")
           input(type="email", placeholder="email", name="subscriptionEmail" id="subscriptionEmail")
           button(type="submit") subscribe
         p.subheading-primary--tiny by clicking on the button you agree ti the processing of personal data

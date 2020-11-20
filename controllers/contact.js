@@ -1,11 +1,12 @@
 import { STATUS, PATH } from "../constants.js";
-import { cart } from "../test-data.js";
+import { products, cart } from "../test-data.js";
 
 export const getContact = (req, res) => {
   return res.status(STATUS.OK).render("contact", {
     pageTitle: "Baked | Contact Us",
     path: PATH.CONTACT,
     cart,
+    subscribeSuccessful: false,
   });
 };
 export const getSendContact = (req, res) => {
@@ -15,5 +16,16 @@ export const getSendContact = (req, res) => {
     pageTitle: "Baked | Contact Us",
     path: PATH.CONTACT,
     cart,
+    subscribeSuccessful: false,
   });
+};
+export const getSubscribe = (req, res) => {
+  const {
+    baseUrl,
+    body: { subscriptionEmail },
+  } = req;
+
+  console.log({ subscriptionEmail });
+
+  return res.status(STATUS.OK).redirect(baseUrl);
 };
