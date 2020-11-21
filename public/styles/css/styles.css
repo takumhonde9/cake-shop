@@ -130,6 +130,20 @@ h2 {
   align-items: center;
 }
 
+.cart {
+  margin-bottom: 8rem;
+}
+.cart__container--1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart__container--2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .main-header {
   background-color: #f4efe6;
   max-width: 85rem;
@@ -211,6 +225,9 @@ h2 {
   border-radius: 100px;
   border: 2px solid;
   background-color: #ffffff;
+  min-width: 4rem;
+  min-height: 4rem;
+  font-size: 1.5rem;
 }
 .button--primary {
   background-color: #252d38;

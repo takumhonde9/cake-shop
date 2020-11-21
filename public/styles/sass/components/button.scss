@@ -19,6 +19,9 @@
     border-radius: 100px;
     border: 2px solid;
     background-color: $color-white;
+    min-width: 4rem;
+    min-height: 4rem;
+    font-size: $subheading-normal-font-size;
   }
   &--primary {
     background-color: $color-primary;

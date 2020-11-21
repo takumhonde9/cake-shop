@@ -1,12 +1,34 @@
 include ./cart-item-card.pug
+include ./action-button.pug
 
 mixin cart-dropdown(cart)
-  //-- remove on css addition
-  .cart-dropdown.hidden
-    h2.heading-secondary--small
-      strong cart
-    for cartItem in cart.items
-      +cart-item-card(cartItem.id, cartItem.title, cartItem.image, cartItem.price, cartItem.quantity, cartItem.desc)
-    form(action="")
-      button(type="submit") checkout
-      input(type="hidden", name="cart", value=cart)
+  .cart-dropdown
+    form.cart__form 
+      div.cart__pack-quantity
+        p.cart__text--bold  products in the box: 
+        div.cart__container--1
+          button.button--circular 3
+          button.button--circular 6
+          button.button--circular 9
+      div.cart__flowers 
+        p.cart__text--bold  need flowers? 
+        div.cart__flower-options
+          input(type="radio" id="flowersYes" checked name="addFlowers" value="yes") 
+          label(for="cartYes") yes
+          input(type="radio" id="flowersNo" name="addFlowers" value="no") 
+          label(for="cartYes") no
+      div.cart__orders
+        p.cart__text--bold  your order:
+        div.cart__order.cart__container--2
+          p.cart__title.subheading-primary banana
+          +action-button("plus", "/images/plus.svg", "", "", 1)
+          p.cart__quantity.subheading-primary 2
+          +action-button("plus", "/images/minus.svg", "", "", 2)
+          p.cart__total.subheading-primary $6.4
+      div.cart__container--2
+        div.cart__total
+          p
+            span.cart__text--bold.subheading-primary Total: 
+            span.cart__text--bold.subheading-primary  $6.4
+        div.cart__action
+          button.button--rounded.button--primary pick up box

@@ -25,3 +25,17 @@
     align-items: center;
   }
 }
+
+.cart {
+  margin-bottom: 8rem;
+  &__container--1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__container--2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
