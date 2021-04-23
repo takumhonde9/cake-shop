@@ -1,0 +1,5 @@
+mixin tab(activeTab) 
+  .tab
+    a.tab__item(href="/catalog/cupcakes", class=(activeTab === "cupcakes" ? "tab__item--active" : "")) cupcakes
+    a.tab__item(href="/catalog/macarons", class=(activeTab === "macarons" ? "tab__item--active" : "")) cakes
+    a.tab__item(href="/catalog/cakes", class=(activeTab === "cakes" ? "tab__item--active" : "")) cakes
