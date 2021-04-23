@@ -1,6 +1,7 @@
 include ../components/cart-button.pug
 include ../components/cart-dropdown.pug
 include ../components/footer.pug
+include ../components/tab.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -25,7 +26,7 @@ html(lang="en")
               a(href="/catalog", class=(path==="/catalog" ? "u-active" : "")) catalog 
             li.main-header__item(class=(path==="/about" ? "no-hover" : ""))
               a(href="/about", class=(path==="/about" ? "u-active" : ""))  about
-            li.main-header__item(class=(path==="/catalog" ? "no-hover" : ""))
+            li.main-header__item(class=(path==="/contact" ? "no-hover" : ""))
               a(href="/contact", class=(path==="/contact" ? "u-active" : ""))  contact
           .main-header__nav--right
             li.main-header__item.main-header__cart-button.no-hover
@@ -33,6 +34,12 @@ html(lang="en")
       +cart-dropdown(cart)
       block header-content
     main
+      if path === "/catalog"
+        +tab("cupakes")
+      if path === "/catalog/macarons"
+        +tab("macarons")
+      if path === "/catalog/cakes"
+        +tab("cakes")
       block content
     footer
       section.footer
