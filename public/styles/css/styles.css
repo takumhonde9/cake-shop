@@ -100,7 +100,7 @@ h2 {
 }
 
 .u-active {
-  border-bottom: 3px solid #252d38;
+  font-weight: bold;
 }
 
 .cart-dropdown {
